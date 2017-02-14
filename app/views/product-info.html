@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-12 phone-item" ng-repeat="phone in phoneList">
-        <a href="">
+        <a href="#!/phones/{{phone.id}}">
             <img ng-src="images/{{ phone.image_link }}" alt="" class="img-responsive">
             <p><span>{{ phone.name }}</span></p>
             <p><span>{{ phone.price }} VNĐ</span></p>

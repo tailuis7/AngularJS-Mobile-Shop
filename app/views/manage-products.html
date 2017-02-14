@@ -1,0 +1,15 @@
+<div class="container" ng-controller="productsController">
+	<div class="row">
+		<a href="#!/themsanpham">
+			<span class="btn btn-info">Thêm mới</span>
+		</a>
+	</div>
+    <div class="row phones">
+        <div class="col-md-12 item" ng-repeat="phone in phones">
+            <a href="#!">
+                <img ng-src="images/{{ phone.image_link }}" alt="" class="img-responsive">
+                <span>{{ phone.name }}</span> <span class="btn btn-danger">Xóa</span> <span class="btn btn-primary">Sửa</span>
+            </a>
+        </div>
+    </div>
+</div>

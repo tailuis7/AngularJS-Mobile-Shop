@@ -1,0 +1,13 @@
+<div class="container" ng-controller="productsController">
+	<div class="row product-info">
+		<form action="" enctype="multipart/form-data">
+			<span>Tên sản phẩm: </span><input type="text" name="name" /><br />
+			<span>Hãng sản xuất: </span><select name="brand" id="brand"><br />
+				<option value=""></option><!-- Lấy danh sách hãng sản xuất để đổ ra, rồi dùng ng-repeat -->
+			</select><br />
+			<span>Giá: </span><input type="text" name="price" /><br />
+			<span>Mô tả: </span><textarea name="" id="" cols="30" rows="10"></textarea><br />
+			<span>Hình ảnh: </span><input type="file" name="image">
+		</form>
+	</div>
+</div>

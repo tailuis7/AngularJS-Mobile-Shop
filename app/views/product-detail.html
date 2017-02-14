@@ -1,0 +1,10 @@
+<div class="container" ng-controller="productDetailController">
+	<div class="row product-detail">
+		<img ng-src="images/{{ phone.image_link }}" alt="" class="img-responsive">
+		<p>Mã sản phẩm: {{ phone.id }}</p>
+		<p>Tên sản phẩm: {{ phone.name }}</p>
+		<p>Hãng sản xuất: {{ phone.brand_name }}</p>
+		<p>Giá: {{ phone.price }} VNĐ</p>
+		<p>Mô tả: {{ phone.description }}</p>
+	</div>
+</div>
