@@ -1,0 +1,78 @@
+.phone-item {
+    clear: both;
+}
+
+.phone-item {
+	border: 1px solid transparent;
+	webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.phone-item:hover {
+	border: 1px solid grey;
+}
+
+.phone-item a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.phone-item a img {
+    float: left;
+    max-width: 450px;
+}
+
+.phone-item a p:not(:last-child) {
+	padding-top: 60px;
+}
+
+
+/* #Tablet (Landscape) 1024px
+---------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 960px) and (max-width: 1240px) {
+    /***
+     * Fix border logos
+     */
+}
+
+
+/* #Tablet (Portrait) 768px
+---------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    /***
+     * Fix border logos
+     */
+}
+
+
+/* #Mobile (Landscape) 480px
+---------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    /***
+     * Fix border logos
+     */
+    .phone-item a img {
+        float: none;
+        max-width: 100%;
+    }
+}
+
+
+/*  #Mobile (Portrait) 320px
+---------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 100px) and (max-width: 479px) {
+    /***
+     * Fix border logos
+     */
+     .phone-item a img {
+        float: none;
+        max-width: 100%;
+    }
+}

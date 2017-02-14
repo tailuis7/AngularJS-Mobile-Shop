@@ -4,11 +4,71 @@
 <head>
     <meta charset="utf-8">
     <title>Mobile - Shop</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles/phone-list.css" />
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="modules/route-config.js"></script>
+    <script src="factories/product-factory.js"></script>
+    <script src="directives/phones-directive.js"></script>
+    <script src="controllers/products-controller.js"></script>
 </head>
 
 <body>
+    <div class="wrapper">
+        <!-- Menu -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand" href="#">
+                        <ul class="list-unstyled">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hãng sản xuất <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Apple</a></li>
+                                    <li><a href="#">SamSung</a></li>
+                                    <li><a href="#">HTC</a></li>
+                                    <li role="separator" class="divider"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <!-- <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hãng sản xuất <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">SamSung</a></li>
+                                <li><a href="#">HTC</a></li>
+                                <li role="separator" class="divider"></li>
+                            </ul>
+                        </li>
+                    </ul> -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="">Trang chủ</a></li>
+                        <li><a href="">Quản lý sản phẩm</a></li>
+                        <li><a href="">Quản lý hãng sản xuất</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- /Menu -->
+        <!-- View -->
+        <div ng-view class="view-frame"></div>
+        <!-- /View -->
+    </div>
 </body>
+
 </html>
